@@ -1,0 +1,27 @@
+<html>
+<head><title> web page</title>
+<script type="text/javascript">
+function touchRock(){
+var userName= prompt("whats your name?", "Write your name here");
+if(userName){
+alert("Nice to meet you " + userName + ".");
+document.getElementById("rockImage").src="rock_happy.png" ;
+}
+}
+</script>
+</head>
+<style>
+div{
+margin-top: 100px;
+}
+</style>
+<body onload="alert('Hello, I m your pet iRock');" >
+<center>
+<div>
+<img id="rockImage" src="rock.png" alt="iRock" 
+onclick="touchRock();" />
+</div>
+</center>
+
+</body>
+</html>

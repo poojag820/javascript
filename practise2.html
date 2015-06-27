@@ -1,0 +1,194 @@
+<html>
+<head><title>practice2</title>
+<style type="text/css">
+body
+{
+	margin:0px;
+	padding:0px;
+	//background-color: red;
+}
+#content{position: relative;
+	width: 1300px;
+	height: 800px;
+	background-color:grey;
+	margin:0 auto;
+	top:-109px;
+	transition:top 3s;
+}
+#header{
+	position:absolute;
+	width:1300;
+	height: 100px;
+	background-color: pink;
+	transition:height 1s;
+}
+
+#square{
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	border:5px solid black;
+	top: 150px;
+	left: 47%;
+	transform:rotate(45deg);
+}
+#border1{
+	position: absolute;
+	width:1270px;
+	height:670px;
+	border: 5px solid white; 
+	top: 110px;
+	margin: 0 10px 10px 10px;
+}
+#border2{
+	position: absolute;
+	width: 1250px;
+	height:650px; 
+	border: 5px solid white;
+	top:120px;
+	//margin:0 10px 10px 10px;
+	margin-left: 20px
+}
+#divborder{
+	position: absolute;
+	width: 1280px;
+	height:80px; 
+	border: 5px solid white;
+	margin: 5px 5px 5px 5px;
+}
+
+#box1{
+	position: absolute;
+	width: 60px;height: 20px;
+	left: 60px;
+	top: 20px;
+	background-color: white;
+	padding: 15px;
+	font-family: verdana sans-serif;
+	text-align: center;
+	border-radius: 4px;
+	text-decoration: none;
+}
+#box2{
+	position: absolute;
+	width: 70px;
+	height: 20px;
+	left: 180px;
+	top: 20px;
+	padding: 15px;
+	background-color: white;
+	font-family: verdana sans-serif;
+	text-align: center;
+	border-radius: 4px;
+	text-decoration: none;
+}
+#box3{
+	position: absolute;
+	width: 80px;
+	height: 20px;
+	left: 310px;
+	top: 20px;
+	padding: 15px;
+	background-color: white;
+	font-family: verdana sans-serif;
+	text-align: center;
+	border-radius: 4px;
+	text-decoration: none;
+}
+#box4{
+	position: absolute;
+	width: 80px;
+	height: 20px;
+	left: 450px;
+	top: 20px;
+	padding: 15px;
+	background-color: white;
+	font-family: verdana sans-serif;
+	text-align: center;
+	border-radius: 4px;
+	text-decoration: none;
+}
+
+div a{
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+	font-style: arial sans-serif;
+}
+#box1:hover, #box2:hover, #box3:hover ,#box4:hover{
+	background-color: hsl(50 , 30%, 70%);
+	transform:scale(1.5 1.5);
+
+}
+#box1, #box2, #box3, #box4{
+	transition: transform 1s;
+}
+
+</style>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script>
+/*
+function myfun()
+{
+	var id1=document.getElementById("content");
+	id1.style.top="0"+"px";
+}
+
+function func2()
+{
+	var id1=document.getElementById("content");
+	id1.style.top="-109"+"px";
+}
+*/
+$(document).ready(function()
+{
+$("#square").click(function(){
+$("#content").css("top","-2px");
+});
+
+$("#square").mouseover(function(){
+$("#content").css("top","-109px");
+});
+});
+
+</script>
+</head>
+
+<body>
+	
+<div id="content">
+	<div id="border1">
+	</div>
+	<div id="border2">
+	</div>
+
+	<div id="square" >
+
+	</div>
+
+<div id="header">
+	<div id="divborder">
+		<div id="box1">
+			<a href="htvdlsd;l;scs">HOME</a>
+		</div>
+
+		<div id="box2">
+			<a href="vsvdvsdvsv">CONTACT</a>
+		</div>
+
+		<div id="box3">
+			<a href="bsdtrhfb;d">FEEDBACK</a>
+		</div>
+
+		<div id="box4">
+			<a href="vdvlkjsosi">ACCOUNT</a>
+		</div>
+
+	</div>
+</div>
+
+</div>
+
+
+
+</body>

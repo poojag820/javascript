@@ -1,0 +1,56 @@
+<html>
+<head><title>animatn example</title>
+	<style type="text/css">
+	#box{
+		width: 100px;
+		height: 100px;
+        border: 2px solid black;
+        position: relative;
+        animation-name: example;
+        animation-duration:4s;
+        animation-delay:2s;
+        animation-direction:alternate; //also reverse
+        animation-iteration-count:2;
+	}
+	@keyframes example{
+		0%{
+           background-color:red;
+           left:0px;
+           top: 0px; 
+		}
+		25%{
+            background-color: green;
+            left: 400px;
+            top: 0px;
+		}
+		50%{
+			background-color: grey;
+			left: 400px;
+			top: 400px;
+
+		}
+		75%{
+			background-color: pink;
+			left: 0px;
+			top: 400px;
+           }
+		100%{
+			background-color: black;
+			left: 0px;
+            top: 0px;
+		
+		  }
+		
+
+	}
+
+	</style>
+</head>
+
+<body>
+<div id="box">
+</div>
+
+
+</body>
+</html>

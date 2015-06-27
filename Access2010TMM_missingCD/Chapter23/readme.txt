@@ -1,0 +1,1 @@
+The web databases examples are disconnected. This means you can test them locally (on your computer). However, if you want to test them in a web browser, you need to first upload them to a SharePoint server that's running Access Services.

@@ -1,0 +1,1 @@
+Using the AdventureWorks.accdb database, open the OrderedItems query and Switch to PivotTable View to see the pivot table.

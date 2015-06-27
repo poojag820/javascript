@@ -1,0 +1,120 @@
+<html>
+<head><title>Responsive Grid View</title>
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+
+<style type="text/css">
+@keyframes headeranime{
+	0%{
+		transform:rotate(360deg);
+		background-color: red;
+	}
+	25%{
+		transform:skew(20deg);
+		background-color: grey;
+	}
+	50%{
+		transform:scale(2,2);
+		background-color: green;
+	}
+	75%{
+		transform:translate(50px);
+		background-color: yellow;
+	}
+	100%{
+		background-color: pink;
+	}
+}
+*{
+	box-sizing:border-box;
+}
+#content{
+	position: relative;
+	width: 700px;
+	margin:0 auto;
+}
+#header{
+	//border: 2px solid black;
+	width: 500px;
+	padding: 10px;
+    background-color: pink;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: verdana;
+    border-radius: 4px;
+    transition: transform 4s;
+    animation-name:headeranime;
+    animation-duration:4s;
+}
+#leftsider{
+	width: 200px;
+	//border: 2px solid black;
+	float: left;
+	padding:10px;
+	//background-color: blue;
+}
+#rightsider{
+	width: 300px;
+	//height: 300px;
+	//border: 2px solid black;
+	float: left;
+padding: 10px;
+}
+#leftsider ul{
+	list-style: none;
+	margin:0;
+	padding: 0;
+	margin-top: 20px;
+}
+#leftsider li{
+	margin-bottom: 5px;
+	padding: 5px;
+	background-color:black;
+	color: white;
+	text-align:center;
+	border-radius: 4px;
+	transition:width 2s,height 2s, transform 2s
+
+}
+#leftsider li:hover{
+	background-color: grey;
+	width:200px; 
+	//height: 200px;
+	transform: scale(2,2);
+	
+}
+#header:hover{
+	transform: rotate(180deg);
+	//transform: skew(20deg);
+}
+
+
+</style>
+</head>
+
+<body>
+	<div id="content">
+<div id="header">
+	<p>Chania</p>
+</div>
+
+<div id="leftsider">
+	<ul>
+        <li>The Flight</li>
+        <li>The City</li>
+        <li>The Island</li>
+        <li>The Food</li>
+    </ul>
+</div>
+<div id="rightsider">
+
+<h1>The City</h1>
+<p>Chania is the capital of the Chania region on the island of Crete. The city can be divided in two parts, the old town and the modern city</p>
+<p>Resize the browser window to see how the content respond to the resizing.</p>
+
+</div>
+</div>
+
+
+
+
+</body>
